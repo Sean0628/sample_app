@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'users/new'
+  resources :users, only: [:new, :show]
 
   root 'static_pages#home'
   get '/help',    to: 'static_pages#help'
