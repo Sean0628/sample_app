@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
   resources :users do
-    memeber do
+    member do
       get :following, :followers
     end
   end
